@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    const divElement = document.getElementById("myDiv");
+    if (divElement) { 
+      divElement.innerHTML = "Hello";
+    } else {
+      console.error("Element with id 'myDiv' not found.");
+    }
+  </script>
+</body>
+</html>
